@@ -16,6 +16,9 @@ package_sets:
 # imported by other rock sets.
 layout:
    - rock.core
+   - slam/orogen/tilt_scan
+   - drivers/orogen/servo_dynamixel
+   - drivers/orogen/hokuyo
    # Uncomment to enable the Rock/ROS bridge
    # You will also have to uncomment some lines in the package_sets above
    # - rock.ros
