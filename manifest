@@ -19,6 +19,7 @@ layout:
    - slam/orogen/tilt_scan
    - drivers/orogen/servo_dynamixel
    - drivers/orogen/hokuyo
+   - drivers/orogen/laser_filter
    # Uncomment to enable the Rock/ROS bridge
    # You will also have to uncomment some lines in the package_sets above
    # - rock.ros
