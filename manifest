@@ -4,27 +4,12 @@
 #
 
 package_sets:
-   - github: rock-core/package_set
-   - github: rock-core/rock-package_set
-   - github: rock-tutorials/tutorials-package_set
-   - github: rock-simulation/simulation-package_set
-   # Uncomment to enable the Rock/ROS bridge
-   # You will also have to uncomment some lines in the layout below
-   # - gitorious: rock-ros/package_set
+   - dfkigit: infuse/cdff-package_set
 
 # Layout. Note that the rock.base and orocos.toolchain sets are
 # imported by other rock sets.
 layout:
-   - rock.core
-   - slam/orogen/tilt_scan
-   - drivers/orogen/servo_dynamixel
-   - drivers/orogen/hokuyo
-   - drivers/orogen/laser_filter
-   # Uncomment to enable the Rock/ROS bridge
-   # You will also have to uncomment some lines in the package_sets above
-   # - rock.ros
-   # Uncomment to checkout and build all tutorials  
-   # - rock.tutorials    
+   - cdff/CDFF
 
 # The layout section specifies what to build, and where to build it (as a
 # subdirectory of the root installation directory). In the example below, all

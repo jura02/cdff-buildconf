@@ -23,9 +23,10 @@
 # NOTE: Variables set like this are exported in the generated 'env.sh' script.
 #
 
-require 'autoproj/gitorious'
-Autoproj.gitorious_server_configuration('GITORIOUS', 'gitorious.org')
-Autoproj.gitorious_server_configuration('GITHUB', 'github.com', :http_url => 'https://github.com')
+require 'autoproj/git'
+Autoproj.git_server_configuration('GITHUB', 'github.com', :http_url => 'https://github.com')
+Autoproj.git_server_configuration('DFKIGIT', 'git.hb.dfki.de', :fallback_to_http => false, default: 'ssh,ssh', disabled_methods: 'http,git')
+Autoproj.git_server_configuration('SPACEAPP', 'gitlab.spaceapplications.com', :fallback_to_http => false, default: 'ssh,ssh', disabled_methods: 'http,git')
 
 Autoproj.env_inherit 'CMAKE_PREFIX_PATH'
 
