@@ -26,5 +26,5 @@
 
 #only needed while on dfki server
 require 'autoproj/git_server_configuration'
-Autoproj.git_server_configuration('DFKIGIT', 'git.hb.dfki.de', :fallback_to_http => false, default: 'ssh,ssh', disabled_methods: 'http,git')
+Autoproj.git_server_configuration('SPACEAPP', 'gitlab.spaceapplications.com', :fallback_to_http => false, default: 'ssh,ssh', disabled_methods: 'http,git')
 
