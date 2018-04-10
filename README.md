@@ -12,61 +12,52 @@
 
 ## Install instructions of the InFuse software stack 
 
-The following commands are executed in the root folder of your installation.
+The following commands should be executed in order to create a checkout of the software stack.
 
-1. Create a folder and move into it
+0. Create a folder and move into it
 
-2. Download the autoproj bootstrap script
-
+0. Download the autoproj bootstrap script
     ```
     $ wget http://www.rock-robotics.org/autoproj_bootstrap
     ```
 
-3. Run the boostrap script and provide the repository address and the branch to install
-
+0. Run the boostrap script and provide the repository address
     ```
     $ ruby autoproj_bootstrap git git@gitlab.spaceapplications.com:InFuse/cdff-buildconf
     ```
 
-4. Answer the autoproj_bootstrap questions. Defaults are usually OK, for example:
-
+0. Answer the autoproj_bootstrap questions. Defaults are usually OK (just hit enter), for example:
     ```
     The current directory is not empty, continue bootstrapping anyway ? [yes] yes
     ```
 
-5. Source your InFuse environment
-
+0. Source your InFuse environment
     ```
     $ source env.sh
     ```
 
-6. Update the installation
-
+0. Update the checkout
     ```
     $ autoproj update
     ```
 
+0. Answer the questions. Defaults are ok again.
     If it went fine, you should see a message similar to:
-
     ```
     Command finished successfully at 2018-04-09 15:13:05 +0200
     ```
 
-7. Answer the questions. Defaults are ok again.
-
-8. Compile the installation
+0. Compile the Sources
 
     ```
     $ autoproj build
     ```
-
     If it went fine, you should see a message similar to:
-
     ```
     Command finished successfully at 2018-04-10 03:13:37 +0200
     ```
 
-## Configuration of your autoproj build
+## Expert Options: Configuration of your autoproj build
 
 ### CMake
 
