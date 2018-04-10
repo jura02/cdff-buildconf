@@ -9,52 +9,46 @@
     source env.sh
     autoproj update
     autoproj build
-    
 
 # Install instructions of the InFuse software stack 
 
-The following commands are executed from the root folder of your installation. 
+The following commands are executed in the root folder of your installation.
 
-#### 1. Create a folder and move into it
+1. Create a folder and move into it
 
-#### 2. Download the autoproj bootstrap script 
+2. Download the autoproj bootstrap script
 
-    
-`` $ wget http://www.rock-robotics.org/autoproj_bootstrap ``
+    $ wget http://www.rock-robotics.org/autoproj_bootstrap
 
-#### 3. Run the boostrap script providing the repository address and the branch to install
+3. Run the boostrap script and provide the repository address and the branch to install
 
-`` $ ruby autoproj_bootstrap git git@gitlab.spaceapplications.com:InFuse/cdff-buildconf `` 
+   $ ruby autoproj_bootstrap git git@gitlab.spaceapplications.com:InFuse/cdff-buildconf
 
-#### 4. Answer the autoproj_bootstrap questions. 
+4. Answer the autoproj_bootstrap questions. Defaults are usually OK, for example:
 
-Defaults are usually ok. For example: 
+    The current directory is not empty, continue bootstrapping anyway ? [yes] yes
 
-`` The current directory is not empty, continue bootstrapping anyway ? [yes] yes ``
+5. Source your InFuse environment
 
-#### 5. Source your InFuse environment
+    $ source env.sh
 
-`` $ source env.sh ``
+6. Update the installation
 
-#### 6. Update the installation
+    $ autoproj update
 
-`` $ autoproj update ``
+   If it went fine, you should see a message similar to:
 
-If it went fine, you should see a message like the following:
+    Command finished successfully at 2018-04-09 15:13:05 +0200
 
-`` Command finished successfully at 2018-04-09 15:13:05 +0200 ``
+7. Answer the questions. Defaults are ok again.
 
-### 7. Answer the asked questions:
+8. Compile the installation
 
-Defaults are ok again.
+    $ autoproj build
 
-### 8. Compile the installation
+   If it went fine, you should see a message similar to:
 
-`` $ autoproj build ``
-
-If it went fine, you should see a message like the following:
-
-`` Command finished successfully at 2018-04-10 03:13:37 +0200 ``
+    Command finished successfully at 2018-04-10 03:13:37 +0200
 
 # Configuration of your autoproj build
 
@@ -112,5 +106,3 @@ init.rb:
 overrides.rb: 
   Ruby script that contains customization code that will get executed after
   autoproj is loaded, but before the build starts.
-
-
