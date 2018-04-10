@@ -11,46 +11,50 @@
     autoproj build
     
 
-# Install instructions for the InFuse software stack
+# Install instructions of the InFuse software stack 
 
 The following commands are executed from the root folder of your installation. 
 
-0. Create a folder and move into it
+#### 1. Create a folder and move into it
 
-0. Download the autoproj bootstrap script 
+#### 2. Download the autoproj bootstrap script 
 
-    $ wget http://www.rock-robotics.org/autoproj_bootstrap
+    
+`` $ wget http://www.rock-robotics.org/autoproj_bootstrap ``
 
-0. Run the boostrap script providing the repository address and the branch to install
+#### 3. Run the boostrap script providing the repository address and the branch to install
 
-    $ ruby autoproj_bootstrap git git@gitlab.spaceapplications.com:InFuse/cdff-buildconf
+`` $ ruby autoproj_bootstrap git git@gitlab.spaceapplications.com:InFuse/cdff-buildconf `` 
 
-0. Answer the autoproj_bootstrap questions. This example answers works currently:
+#### 4. Answer the autoproj_bootstrap questions. 
 
-Defaults are usually ok.
+Defaults are usually ok. For example: 
 
-The current directory is not empty, continue bootstrapping anyway ? [yes] yes
+`` The current directory is not empty, continue bootstrapping anyway ? [yes] yes ``
 
-0. Source your rock environment
+#### 5. Source your InFuse environment
 
-    $ source env.sh
+`` $ source env.sh ``
 
-0. Update the installation
+#### 6. Update the installation
 
-    $ autoproj update
+`` $ autoproj update ``
 
-0. Questions will be asked:
+If it went fine, you should see a message like the following:
+
+`` Command finished successfully at 2018-04-09 15:13:05 +0200 ``
+
+### 7. Answer the asked questions:
 
 Defaults are ok again.
 
-0. Compile the installation
+### 8. Compile the installation
 
-    $ autoproj build
+`` $ autoproj build ``
 
+If it went fine, you should see a message like the following:
 
-
-
-
+`` Command finished successfully at 2018-04-10 03:13:37 +0200 ``
 
 # Configuration of your autoproj build
 
@@ -91,7 +95,7 @@ remotes/:
 config.yml:
   Autoproj can be parametrized by build options. This file is where your
   previous choices for these options are saved. You should not change it manually.
-  If you need tou change an option, run
+  If you need to change an option, run
     autoproj reconfigure
 
 overrides.yml:
