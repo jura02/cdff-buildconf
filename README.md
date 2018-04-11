@@ -10,9 +10,9 @@
     autoproj update
     autoproj build
 
-## Install instructions of the InFuse software stack 
+## Infuse framework install instructions
 
-The following commands should be executed in order to create a checkout of the software stack.
+Execute the following to get the infuse framework ready to use on your machine.
 
 0. Create a folder and move into it
 
