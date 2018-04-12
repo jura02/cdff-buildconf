@@ -25,11 +25,9 @@ The following commands are executed from the root folder of your installation.
 
     $ ruby autoproj_bootstrap git git@gitlab.spaceapplications.com:InFuse/cdff-buildconf
 
-0. Answer the autoproj_bootstrap questions. This example answers works currently:
+    Append `branch=cdff_dev` if you want to install CDFF and CDFF-dev.
 
-Defaults are usually ok.
-
-The current directory is not empty, continue bootstrapping anyway ? [yes] yes
+0. Answer the autoproj_bootstrap questions. Defaults are usually ok.
 
 0. Source your rock environment
 
