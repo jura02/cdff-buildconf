@@ -15,6 +15,7 @@ package_sets:
 layout:
    - cdff/CDFF
 #   - envire/envire_core
+   - cdff/CDFF_dev
 
 
 # Further Reference and Documentation of this file (not infuse related):
