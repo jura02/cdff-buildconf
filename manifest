@@ -17,8 +17,6 @@ layout:
    - cdff/CDFF
    - cdff/CDFF_dev
 
-
-
 # Further Reference and Documentation of this file (not infuse related):
 
 # The layout section specifies what to build, and where to build it (as a
