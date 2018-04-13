@@ -6,6 +6,8 @@
 # package_sets are defining software sources and how to build them
 package_sets:
    - spaceapp: infuse/cdff-package_set
+#   - dfkigit: InFuse/infuse-package_set
+#   - dfkigit: compilerspeedup/package_set
 
 # The Layout defines which of the packages withing the package sets
 # (including their dependencies) should be installed, 
