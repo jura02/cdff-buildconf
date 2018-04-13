@@ -7,6 +7,8 @@
 package_sets:
    - spaceapp: infuse/cdff-package_set
 #   - github: envire/envire-package_set
+#   - dfkigit: InFuse/infuse-package_set
+#   - dfkigit: compilerspeedup/package_set
 
 # The Layout defines which of the packages withing the package sets
 # (including their dependencies) should be installed, 

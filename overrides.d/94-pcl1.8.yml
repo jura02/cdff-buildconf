@@ -1,0 +1,21 @@
+---
+- base/types:
+   github: eroehrig/base-types
+   branch: rock-rc
+   
+- slam/pcl:
+   github: PointCloudLibrary/pcl
+   tag: pcl-1.8.0
+
+- slam/orogen/pcl:
+  branch: entern
+
+- gui/vizkit3d_pcl:
+  branch: entern
+
+- gui/vizkit:
+    branch: master
+
+- gui/vizkit3d:
+    github: envire/gui-vizkit3d
+    branch: osgviz
