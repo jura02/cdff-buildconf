@@ -26,7 +26,7 @@ Execute the following to get the infuse framework ready to use on your machine.
     $ ruby autoproj_bootstrap git git@gitlab.spaceapplications.com:InFuse/cdff-buildconf
     ```
 
-0. Answer the autoproj_bootstrap questions. Defaults are usually OK (just hit enter), for example:
+    Answer the autoproj_bootstrap questions. Defaults are usually OK (just hit enter), for example:
     ```
     The current directory is not empty, continue bootstrapping anyway ? [yes] yes
     ```
@@ -41,7 +41,7 @@ Execute the following to get the infuse framework ready to use on your machine.
     $ autoproj update
     ```
 
-0. Answer the questions. Defaults are ok again.
+    Answer the questions. Defaults are ok again.
     If it went fine, you should see a message similar to:
     ```
     Command finished successfully at 2018-04-09 15:13:05 +0200
