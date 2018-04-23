@@ -57,6 +57,21 @@ Execute the following to get the infuse framework ready to use on your machine.
     Command finished successfully at 2018-04-10 03:13:37 +0200
     ```
 
+## Uninstalling
+
+Autoproj also may have installed OS dependencies, but autoproj cannot decide
+whether those are still needed or not, they cannot be automatically
+uninstalled. To see which packages were installed, please look at the 
+install/logs/autoptoj-osdeps.log file for a complete list.
+
+Autoproj itself (and it's ruby dependencies) is installed
+to the user folder ~/.autoproj
+
+Autoproj installes all source packages locally a folder called "install" the
+base folder you created (e.g. you executed autoproj_bootstrap).
+
+Just delete these folders to uninstall.
+
 ## Expert Options: Configuration of your autoproj build
 
 ### CMake
