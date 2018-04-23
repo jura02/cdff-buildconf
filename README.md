@@ -67,8 +67,8 @@ install/logs/autoptoj-osdeps.log file for a complete list.
 Autoproj itself (and it's ruby dependencies) is installed
 to the user folder ~/.autoproj
 
-Autoproj installes all source packages locally a folder called "install" the
-base folder you created (e.g. you executed autoproj_bootstrap).
+Autoproj installes all source packages to a local a folder called "install" in the
+base folder (i.e. where you executed autoproj_bootstrap).
 
 Just delete these folders to uninstall.
 
