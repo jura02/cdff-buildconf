@@ -9,6 +9,7 @@
     source env.sh
     autoproj update
     autoproj build
+    
 
 ## Infuse framework install instructions
 
@@ -25,6 +26,8 @@ Execute the following to get the infuse framework ready to use on your machine.
     ```
     $ ruby autoproj_bootstrap git git@gitlab.spaceapplications.com:InFuse/cdff-buildconf
     ```
+
+    Append `branch=cdff_dev` if you want to install CDFF and CDFF-dev.
 
     Answer the autoproj_bootstrap questions. Defaults are usually OK (just hit enter), for example:
     ```
@@ -126,3 +129,5 @@ that defines the whole build.
 `overrides.rb`: 
   Ruby script that contains customization code that will get executed after
   autoproj is loaded, but before the build starts.
+
+

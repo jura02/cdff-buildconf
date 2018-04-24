@@ -3,13 +3,20 @@
 # http://www.rock-robotics.org/documentation/autoproj/customization.html
 #
 
+# package_sets are defining software sources and how to build them
 package_sets:
    - spaceapp: infuse/cdff-package_set
 
-# Layout. Note that the rock.base and orocos.toolchain sets are
-# imported by other rock sets.
+# The Layout defines which of the packages withing the package sets
+# (including their dependencies) should be installed, 
+# to build all packages of a package set, also the
+# package set name (cdff) may be written here.
 layout:
    - cdff/CDFF
+
+
+
+# Further Reference and Documentation of this file (not infuse related):
 
 # The layout section specifies what to build, and where to build it (as a
 # subdirectory of the root installation directory). In the example below, all
