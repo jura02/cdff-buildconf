@@ -1,0 +1,7 @@
+---
+
+- base/types:
+    branch: master
+- base/console_bridge:
+    branch: master
+
