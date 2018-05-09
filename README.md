@@ -1,4 +1,4 @@
-# Quick Instructions (for plain ubuntu:latest docker container from dockerhub.com):
+## Quick Instructions (also works for ubuntu:latest docker container from dockerhub.com):
 
     apt-get update
     apt-get install -y build-essential ruby ruby-dev sudo wget
@@ -11,50 +11,73 @@
     autoproj build
     
 
-# Install instructions for the InFuse software stack
+## Infuse framework install instructions
 
-The following commands are executed from the root folder of your installation. 
+Execute the following to get the infuse framework ready to use on your machine.
 
 0. Create a folder and move into it
 
-0. Download the autoproj bootstrap script 
-
+0. Download the autoproj bootstrap script
+    ```
     $ wget http://www.rock-robotics.org/autoproj_bootstrap
+    ```
 
-0. Run the boostrap script providing the repository address and the branch to install
-
+0. Run the boostrap script and provide the repository address
+    ```
     $ ruby autoproj_bootstrap git git@gitlab.spaceapplications.com:InFuse/cdff-buildconf
+    ```
 
-0. Answer the autoproj_bootstrap questions. This example answers works currently:
+    Append `branch=cdff_dev` if you want to install CDFF and CDFF-dev.
 
-Defaults are usually ok.
+    Answer the autoproj_bootstrap questions. Defaults are usually OK (just hit enter), for example:
+    ```
+    The current directory is not empty, continue bootstrapping anyway ? [yes] yes
+    ```
 
-The current directory is not empty, continue bootstrapping anyway ? [yes] yes
-
-0. Source your rock environment
-
+0. Source your InFuse environment
+    ```
     $ source env.sh
+    ```
 
-0. Update the installation
-
+0. Update the checkout
+    ```
     $ autoproj update
+    ```
 
-0. Questions will be asked:
+    Answer the questions. Defaults are ok again.
+    If it went fine, you should see a message similar to:
+    ```
+    Command finished successfully at 2018-04-09 15:13:05 +0200
+    ```
 
-Defaults are ok again.
+0. Compile the Sources
 
-0. Compile the installation
-
+    ```
     $ autoproj build
+    ```
+    If it went fine, you should see a message similar to:
+    ```
+    Command finished successfully at 2018-04-10 03:13:37 +0200
+    ```
 
+## Uninstalling
 
+Autoproj also may have installed OS dependencies, but autoproj cannot decide
+whether those are still needed or not, they cannot be automatically
+uninstalled. To see which packages were installed, please look at the 
+install/logs/autoptoj-osdeps.log file for a complete list.
 
+Autoproj itself (and it's ruby dependencies) is installed
+to the user folder ~/.autoproj
 
+Autoproj installes all source packages to a local a folder called "install" in the
+base folder (i.e. where you executed autoproj_bootstrap).
 
+Just delete these folders to uninstall.
 
-# Configuration of your autoproj build
+## Expert Options: Configuration of your autoproj build
 
-* CMake
+### CMake
 
 Since everything is CMake based, environment variables such as
 CMAKE_PREFIX_PATH are always picked up. You can set them
@@ -71,41 +94,39 @@ package, do
 
     package('rtt').define "CMAKE_BUILD_TYPE", "Debug"
 
-* Directory structure
+### Files in the `autoproj/` directory
 
-The autoproj/ directory (this directory) contains the files and configuration
-that defines the whole build. The manifest file
+The `autoproj/` directory (this directory) contains the files and configuration
+that defines the whole build.
 
-* Files in the autoproj/ directory
-
-manifest:
+`manifest`:
   Simple key-value pair file in the YAML format. It lists sources for "package
   sets", other autoproj configuration directories in which packages have been
   declared for you to reuse (package_sets section). It also lists the packages
   that you actually want to build (layout section)
 
-remotes/:
+`remotes/`:
   contains a checkout of the package sets listed in the manifest. You should not
   have to go in there unless you are yourself developing a package set.
 
-config.yml:
+`config.yml`:
   Autoproj can be parametrized by build options. This file is where your
   previous choices for these options are saved. You should not change it manually.
-  If you need tou change an option, run
+  If you need to change an option, run
     autoproj reconfigure
 
-overrides.yml:
+`overrides.yml`:
   Simple key-value pair file in the YAML format.  It allows to override branch
   information for specific packages.  Most people leave this to the default,
   unless they want to use a feature from an experimental branch. See the following
   page for a description of its contents.
     http://www.rock-robotics.org/stable/documentation/autoproj/advanced/importers.html
 
-init.rb:
+`init.rb`:
   Ruby script that contains customization code that will get executed before
   autoproj is loaded.
 
-overrides.rb: 
+`overrides.rb`: 
   Ruby script that contains customization code that will get executed after
   autoproj is loaded, but before the build starts.
 
