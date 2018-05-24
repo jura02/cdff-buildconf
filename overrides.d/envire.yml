@@ -2,6 +2,8 @@
 
 - base/types:
     branch: master
+- base/numeric:
+    branch: master
 - base/console_bridge:
     branch: master
 
