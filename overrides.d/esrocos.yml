@@ -1,0 +1,7 @@
+---
+
+#needed until merge into esrocos/tools-config
+#https://github.com/ESROCOS/tools-config/pull/5
+- tools/config:
+  github: planthaber/tools-config
+  branch: set_asn_compiler
