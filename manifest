@@ -5,7 +5,9 @@
 
 # package_sets are defining software sources and how to build them
 package_sets:
+#   - github: ESROCOS/package_set-core
    - spaceapp: infuse/cdff-package_set
+   - github: envire/envire-package_set
 #   - dfkigit: InFuse/infuse-package_set
 #   - dfkigit: compilerspeedup/package_set
 
@@ -15,7 +17,9 @@ package_sets:
 # package set name (cdff) may be written here.
 layout:
    - cdff/CDFF
+   - envire/envire_core
    - cdff/CDFF_dev
+#   - infuse/logreplay_prototype
 
 # Further Reference and Documentation of this file (not infuse related):
 

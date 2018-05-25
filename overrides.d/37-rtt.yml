@@ -1,3 +1,24 @@
 ---
-- tools/rtt:
+- rtt:
+    branch: master
+- orogen:
+    branch: master
+- typelib:
+    branch: master
+- orocos.rb:
+    branch: master
+
+- base/types:
+    branch: master
+- base/orogen/types:
+    branch: master
+- tools/logger:
+    branch: master
+- drivers/aggregator:
+    branch: master
+- drivers/iodrivers_base:
+    branch: master
+- drivers/transformer:
+    branch: master
+- drivers/orogen/transformer:
     branch: master
