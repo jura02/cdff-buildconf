@@ -5,3 +5,7 @@
 - tools/config:
   github: planthaber/tools-config
   branch: set_asn_compiler
+
+- types/base:
+  branch: types-base-old
+
