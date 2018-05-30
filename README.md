@@ -5,6 +5,7 @@
     
     wget http://rock-robotics.org/autoproj_bootstrap
     ruby autoproj_bootstrap git git@gitlab.spaceapplications.com:InFuse/cdff-buildconf
+    Answer "whether C++11 should be enabled for Rock packages [false]" with "true" and the other with default (just hit enter)
     
     source env.sh
     autoproj update
@@ -29,10 +30,11 @@ Execute the following to get the infuse framework ready to use on your machine.
 
     Append `branch=cdff_dev` if you want to install CDFF and CDFF-dev.
 
-    Answer the autoproj_bootstrap questions. Defaults are usually OK (just hit enter), for example:
+    Answer the autoproj_bootstrap questions. Defaults are usually OK (just hit enter), except for:
     ```
-    The current directory is not empty, continue bootstrapping anyway ? [yes] yes
+    whether C++11 should be enabled for Rock packages [false]
     ```
+    There you type 'true' and hit enter.
 
 0. Source your InFuse environment
     ```
