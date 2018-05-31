@@ -22,3 +22,5 @@
     branch: master
 - drivers/orogen/transformer:
     branch: master
+- tools/service_discovery:
+    branch: master
