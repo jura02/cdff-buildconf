@@ -6,3 +6,9 @@
 #   - rtt
 #     branch: test
 #  
+overrides:
+   - cdff/CDFF_dev:
+     branch: envire
+   - envire/envire_visualizer:
+     github: AlexanderFabisch/envire-envire_visualizer
+     branch: simple_interface
