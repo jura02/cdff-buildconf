@@ -12,3 +12,6 @@ overrides:
    - envire/envire_visualizer:
      github: AlexanderFabisch/envire-envire_visualizer
      branch: simple_interface
+   - gui/vizkit3d:
+     github: AlexanderFabisch/gui-vizkit3d
+     branch: osgviz
