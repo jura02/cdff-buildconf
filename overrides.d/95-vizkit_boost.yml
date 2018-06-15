@@ -1,0 +1,4 @@
+---
+- gui/vizkit3d:
+  github: AlexanderFabisch
+  branch: osgviz
