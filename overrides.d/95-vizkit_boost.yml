@@ -1,4 +1,4 @@
 ---
 - gui/vizkit3d:
-  github: AlexanderFabisch
+  github: AlexanderFabisch/gui-vizkit3d
   branch: osgviz
