@@ -1,0 +1,32 @@
+diff --git a/asn/Frame.asn b/asn/Frame.asn
+index d2603f0..50970eb 100644
+--- a/asn/Frame.asn
++++ b/asn/Frame.asn
+@@ -77,10 +77,10 @@ SEQUENCE
+ 
+ ---  Frame sizes (manually defined)
+ 
+--- 1024(width) x 768(height) x 3(bytes-per-pixel)
+-frameMaxBytes            T-UInt32 ::= 2359296
+-frameMaxRows             T-UInt32 ::= 768
+-frameMaxCols             T-UInt32 ::= 1024
++-- 3840(width) x 2160(height) x 3(bytes-per-pixel)
++frameMaxBytes            T-UInt32 ::= 24883200
++frameMaxRows             T-UInt32 ::= 2160
++frameMaxCols             T-UInt32 ::= 3840
+ frameMaxAttributes       T-UInt32 ::= 5
+ 
+ ---  END of frame sizes
+diff --git a/asn/Pointcloud.asn b/asn/Pointcloud.asn
+index e5d922c..05b2626 100644
+--- a/asn/Pointcloud.asn
++++ b/asn/Pointcloud.asn
+@@ -13,7 +13,7 @@ IMPORTS T-Int32, T-UInt32, T-Int8, T-UInt8, T-Boolean  FROM TASTE-BasicTypes T-I
+ 
+ 
+ --- Size of the Pointcloud data
+-maxPointcloudSize T-UInt32 ::= 60
++maxPointcloudSize T-UInt32 ::= 300000
+ 
+ ---  Definition POINTCLOUD Starts 
+ Pointcloud   ::= 
