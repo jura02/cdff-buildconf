@@ -5,5 +5,3 @@
 - envire/envire_core:
   github: planthaber/envire-envire_core
   branch: clone
-- infuse/ASN_Viz:
-  branch: cdff
