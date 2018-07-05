@@ -1,3 +1,16 @@
+diff --git a/asn/DepthMap.asn b/asn/DepthMap.asn
+index 3371c6b..f3616f1 100644
+--- a/asn/DepthMap.asn
++++ b/asn/DepthMap.asn
+@@ -32,7 +32,7 @@ PROJECTION-TYPE ::= ENUMERATED { 	 polar, planar }
+ ---- END of typedefs defined in this module 
+ 
+ --- Maximum size constant for DepthMap
+-maxDepthMapSize T-UInt32 ::= 60
++maxDepthMapSize T-UInt32 ::= 30000
+ 
+ DepthMap   ::= 
+ SEQUENCE
 diff --git a/asn/Frame.asn b/asn/Frame.asn
 index d2603f0..50970eb 100644
 --- a/asn/Frame.asn
@@ -17,6 +30,19 @@ index d2603f0..50970eb 100644
  frameMaxAttributes       T-UInt32 ::= 5
  
  ---  END of frame sizes
+diff --git a/asn/LaserScan.asn b/asn/LaserScan.asn
+index 61fd9e5..a98b5d8 100644
+--- a/asn/LaserScan.asn
++++ b/asn/LaserScan.asn
+@@ -20,7 +20,7 @@ LASER-RANGE-ERRORS ::= ENUMERATED { 	 too-far, too-near, measurement-error, othe
+ ---- END of typedefs defined in this module 
+ 
+ --- Size of the LaserScan data
+-maxLaserScanSize T-UInt32 ::= 60
++maxLaserScanSize T-UInt32 ::= 2000
+ 
+ ---  Definition LASERSCAN Starts 
+ 
 diff --git a/asn/Pointcloud.asn b/asn/Pointcloud.asn
 index e5d922c..05b2626 100644
 --- a/asn/Pointcloud.asn
