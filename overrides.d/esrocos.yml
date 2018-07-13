@@ -5,14 +5,3 @@
 - tools/config:
   github: planthaber/tools-config
   branch: set_asn_compiler
-
-- types/base:
-  branch: types-base-old
-
-- types/base_support:
-  branch: types-base_support_old
-
-- types/sensor_samples:
-  patches: 
-    - [$AUTOPROJ_SOURCE_DIR/esrocos_types_sensor_samples.patch, 1]
-
