@@ -1,13 +1,7 @@
 ---
-- envire/envire_visualizer:
-  github: AlexanderFabisch/envire-envire_visualizer
-  branch: simple_interface
-- envire/envire_core:
-  github: planthaber/envire-envire_core
-  branch: clone
 - types/sensor_samples:
-  github: AlexanderFabisch/types-sensor_samples
-  branch: infuse
+  github: H2020-InFuse/types-sensor_samples
+  branch: master
 - types/sensor_samples_support:
-  github: AlexanderFabisch/types-sensor_samples_support
-  branch: infuse
+  github: H2020-InFuse/types-sensor_samples_support
+  branch: master
