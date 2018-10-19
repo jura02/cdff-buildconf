@@ -7,5 +7,7 @@
   branch: master
 - envire/envire_urdf:
   branch: devel
+- envire/envire_visualizer:
+  branch: frameupdate
 - slam/maps:
   branch: q_moc
