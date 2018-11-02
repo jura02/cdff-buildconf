@@ -18,6 +18,7 @@ layout:
    - cdff/CDFF
    - envire/envire_core
    - cdff/CDFF_dev
+   - tools/pocolog2msgpack
 #   - infuse/logreplay_prototype
 
 # Further Reference and Documentation of this file (not infuse related):
