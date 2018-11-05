@@ -4,7 +4,7 @@
     apt-get install -y build-essential ruby ruby-dev sudo wget
     
     wget http://rock-robotics.org/autoproj_bootstrap
-    ruby autoproj_bootstrap git git@gitlab.spaceapplications.com:InFuse/cdff-buildconf
+    ruby autoproj_bootstrap git git@gitlab.spaceapplications.com:InFuse/cdff-buildconf branch=cdff_dev
     Answer "whether C++11 should be enabled for Rock packages [false]" with "true" and the other with default (just hit enter)
     
     source env.sh
@@ -25,10 +25,10 @@ Execute the following to get the infuse framework ready to use on your machine.
 
 0. Run the boostrap script and provide the repository address
     ```
-    $ ruby autoproj_bootstrap git git@gitlab.spaceapplications.com:InFuse/cdff-buildconf
+    $ ruby autoproj_bootstrap git git@gitlab.spaceapplications.com:InFuse/cdff-buildconf branch=cdff_dev
     ```
 
-    Append `branch=cdff_dev` if you want to install CDFF and CDFF-dev.
+    Append `branch=cdff_dev` if you want to install CDFF and CDFF-dev. Remove it if you only want to install CDFF.
 
     Answer the autoproj_bootstrap questions. Defaults are usually OK (just hit enter), except for:
     ```
