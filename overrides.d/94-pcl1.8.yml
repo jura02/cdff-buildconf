@@ -1,7 +1,4 @@
 ---
-- base/types:
-   github: eroehrig/base-types
-   branch: rock-rc
    
 - slam/pcl:
    github: PointCloudLibrary/pcl
