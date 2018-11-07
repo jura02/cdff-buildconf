@@ -20,3 +20,11 @@ Autoproj.env_add_path 'LD_LIBRARY_PATH', "$CDFF/DFNs/:$CDFF/DFNs/BundleAdjustmen
 Autoproj.env_add_path 'LD_LIBRARY_PATH', "$CDFF/DFPCs/:$CDFF/DFPCs/AbsoluteLocalization/:$CDFF/DFPCs/CMakeFiles/:$CDFF/DFPCs/DEMBuilding/:$CDFF/DFPCs/HapticScanning/:$CDFF/DFPCs/LIDARMapBasedLocalization/:$CDFF/DFPCs/LIDARPoseGraphSlam/:$CDFF/DFPCs/PointCloudModelLocalisation/:$CDFF/DFPCs/PoseFusion/:$CDFF/DFPCs/Reconstruction3D/:$CDFF/DFPCs/ReconstructionAndIdentification/:$CDFF/DFPCs/VisualOdometry_LAAS/:$CDFF/DFPCs/VisualOdometry_MAG/:$CDFF/DFPCs/VisualSlamDepth/:$CDFF/DFPCs/VisualSlamStereo/"
 Autoproj.env_add_path 'LD_LIBRARY_PATH', "$CDFF/CC"
 
+#set -march=sandybridge for all cmake packages
+Autobuild::Package.each do |name, pkg|
+    if pkg.kind_of?(Autobuild::CMake)
+        cxx_flags = "#{pkg.defines['CMAKE_CXX_FLAGS']} #{ENV['CXXFLAGS']}"
+        pkg.define "CMAKE_CXX_FLAGS", "#{cxx_flags} -march=sandybridge"
+    end
+end
+
