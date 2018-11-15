@@ -5,7 +5,7 @@
 
 # package_sets are defining software sources and how to build them
 package_sets:
-   - spaceapp: infuse/cdff-package_set
+   - spaceapp: InFuse/cdff-package_set
    - github: envire/envire-package_set
 #   - dfkigit: InFuse/infuse-package_set
 #   - dfkigit: compilerspeedup/package_set
