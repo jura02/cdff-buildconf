@@ -5,10 +5,9 @@
 
 # package_sets are defining software sources and how to build them
 package_sets:
-   - spaceapp: InFuse/cdff-package_set
+   - github: H2020-InFuse/cdff-package_set
    - github: envire/envire-package_set
-#   - dfkigit: InFuse/infuse-package_set
-#   - dfkigit: compilerspeedup/package_set
+#   - github: rock-core/compilerspeedup-package_set
 
 # The Layout defines which of the packages withing the package sets
 # (including their dependencies) should be installed, 
@@ -19,7 +18,6 @@ layout:
    - envire/envire_core
    - cdff/CDFF_dev
    - tools/pocolog2msgpack
-#   - infuse/logreplay_prototype
 
 # Further Reference and Documentation of this file (not infuse related):
 
